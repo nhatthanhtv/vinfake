@@ -1,0 +1,168 @@
+<div class="container-data__cart grid wide" id="container-info">
+    <div class="row">
+        <!-- colum list mua hàng -->
+        <div class="col l-9 m-8 c-12">
+            <!-- thẻ nút item -->
+            <div class="data__cart">
+                <div class="data__cart-button">
+                    <a href="/">
+                        <button class="data__cart-btn">Tiếp tục mua hàng</button>
+                    </a>
+                    <button class="data__cart-delete">Xóa giỏ hàng</button>
+                </div>
+            </div>
+            <!-- list product mua được -->
+            <div class="data__cart-list">
+                
+                
+
+
+                {{!-- <div class="data__cart-item">
+                    <div class="data__cart-item-info">
+                        <img src="https://cdn-crownx.winmart.vn/images/prod/162428519207610180851-CHA-Bonh-Choco-Pie-Orion-hop-660g.jpg"
+                            alt="" class="data__cart-item-info-img">
+                        <div class="data__cart-item-content">
+                            <h4 class="data__cart-item-content-title">
+                                Tương ớt Chin-Su chai eo 500g
+                            </h4>
+                            <span>ĐVT</span> <span class="data__cart-item-dvt">CHAI</span>
+                            <p class="data__cart-item-delete">
+                                <i class="fas fa-trash-alt"></i>
+                                Xóa khỏi giỏ hàng
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="cart-content-item-option">
+                        <p class="cart-content-item-option-price">
+                            50.000đ
+                        </p>
+                        <div class="cart-content-item-option-button">
+                            <button class="cart-content-item-option-down"><span>-</span></button>
+                            <input type="text" maxlength="2" max="99" value="1">
+                            <button class="cart-content-item-option-up"><span>+</span></button>
+
+                        </div>
+                    </div>
+                </div> --}}
+
+            </div>
+            <!-- end product -->
+        </div>
+        <!-- colum tính tiền -->
+        <div class="col l-3 m-4 c-12">
+            <div class="data__pricre">
+                {{!-- <div class="data__pricre__content">
+                    <div class="data__pricre-header">
+                        <span>Tạm tính</span>
+                        <span class="data__pricre-money">
+                            189.500đ
+                        </span>
+                    </div>
+                    <div class="data__pricre-voucher">
+                        <input type="text" placeholder="Nhập Mã giảm giá tại đây" id="voucher-sale">
+                    </div>
+                    <div class="data__pricre-ship">
+                        <span>Phí vận chuyển</span>
+                        <span class="data__pricre-ship-money">15.000đ</span>
+                    </div>
+                    <div class="data__pricre-total">
+                        <span>Thành tiền</span>
+                        <span class="data__pricre-total-money">189.550đ</span>
+                    </div>
+                    <button class="data__cart-btn" id="buyItems">Thanh toán</button>
+                </div> --}}
+            </div>
+        </div>
+    </div>
+    <form id="from-cart"></form>
+
+</div>
+<div for="" class="modal_cart ">
+    <div class="grid wide">
+        <div class="pay__content">
+                
+            <div class="pay__content-header">
+                <h2 class="pay__content-text">Thanh toán</h2>
+                <div class="icon-close-pay">
+                    <i class="far fa-times-circle"></i>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col l-7 form__client-pay">
+                    <form action="/cart/pay" method="POST" class="form" id="form-1">
+                            <h1>THÔNG TIN KHÁCH HÀNG    </h1>
+                        <div class="spacer">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="fullname" class="form-label">Tên đầy đủ</label>
+                            <input id="fullname" name="fullname" type="text" placeholder="VD: Nguyễn Văn A"
+                                class="form-control">
+                            <span class="form-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input id="email" name="email" type="text" placeholder="VD: email@domain.com"
+                                class="form-control">
+                            <span class="form-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Số điện thoai</label>
+                            <input id="phone" name="phone" type="number" placeholder="09xxxxx"
+                                class="form-control">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="address" class="form-label">Địa chỉ</label>
+                            <input id="address" name="address" type="text" placeholder="VD: Số 1,Trần Phú, P3, Quận 5"
+                                class="form-control">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group" style="display: none;">
+                            <input id="dataItemsOrder" name="dataItemsOrder" type="text" value="hi"
+                                class="form-control">
+                        </div>
+                        
+
+
+                        <button class="form-submit">Đặt hàng</button>
+                    </form>
+                </div>
+                <div class="col l-5">
+                    <div class="info-pay">
+                        <table class="table table-zebra table-hover scroll">
+                            <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Số lượng</th>
+                                    <th>Thành tiền</th>
+                                </tr>
+                            </thead>
+                            <tfoot id="tfooter-pay">
+                                <tr>
+                                    
+                                </tr>
+                            </tfoot>
+                            <tbody id="tbody-pay">
+                                <tr>
+                                    <td>1</td>
+                                    <td>Cà chua</td>
+                                    <td>5</td>
+                                    <td>10.000</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+sc
+<script src="http://localhost:3000/js/cart.js"></script>

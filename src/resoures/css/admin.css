@@ -1,0 +1,13 @@
+.container__oderlist,
+.container__admin{
+    padding-top: 130px;
+}
+.content__admin{
+    padding-top: 53px;
+    margin: 0 auto;
+    width:60%
+}
+.container__oderlist{
+    
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,79 @@
+<div class=" grid wide" id="container-info">
+            <div class="content__title">
+                <span class="data-title">Trang chủ > <span class="data-title-item"></span>Tỏi củ Hải Dương hộp
+                    300g</span>
+            </div>
+            <div class="data__item">
+                <div class="row">
+                    <div class="item__img-photo col l-5 m-8 c-12">
+                        <img src="{{dataItems.mediaUrl}}"
+                            alt="" class="item__img-photo-img">
+                    </div>
+                    <div class="item__info col l-7 m-4 c-12">
+                        <div class="data-item-info">
+                            <h3 class="item__info-title">
+                                {{dataItems.name}}
+                            </h3>
+                            <span class="sku">SKU: <span> {{dataItems.itemNo}}</span></span>
+
+                            <div class="data-price">
+                                <div class="data-price-one data-config">
+                                    <span class="left-info">Giá bán lẻ:</span>
+                                    <span class="right-info"> {{price dataItems.price}} VNĐ</span>
+                                </div>
+                                <div class="data-status data-config">
+                                    <span class="left-info">Tình trạng</span>
+                                    <span class="right-info">Còn hàng</span>
+                                </div>
+                            </div>
+
+                            <div class="data__express">
+                                <div class="data__express-left">
+                                    <span class="">
+                                        Vận chuyển
+                                    </span>
+                                </div>
+                                <span class="data__express-right">Kính gửi: Quý khách hàng. Hiện nhu cầu mua sắm tại
+                                    WinMart đang tăng cao, đơn hàng Quý khách đặt online sẽ giao chậm hơn so với dự
+                                    kiến, mong khách hàng thông cảm. WinMart luôn cố gắng phục vụ quý khách hàng một
+                                    cách tốt nhất.Liên hệ hỗ trợ : 024 71066866
+                                </span>
+                            </div>
+                            <div class="data__classify">
+                                <div class="classify__title">
+                                    <span class="classify__title-text">Phân loại</span>
+                                </div>
+                                <div class="classify-option">
+                                    <button class="classify-option-btn"> {{dataItems.uomName}}</button>
+                                </div>
+                            </div>
+                            <div class="data__detail">
+                                <div class="detail__title">
+                                    <span class="data__detail-text">Số lượng</span>
+                                </div>
+                                <div class="detail__number">
+                                    <div class="detail__number-option">
+                                        <button class="detail__number-btn-down"><span>-</span></button>
+                                        <input type="text" maxlength="2" max="99" value="1">
+                                        <button class="detail__number-btn-up"><span>+</span></button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data__buy_addcart">
+                                <div class="data__buy">
+                                    <button class="data__buy-btn data__buy_addcart-btn">Mua ngay</button>
+                                </div>
+                                <div class="data__add cart">
+                                    <button class="data__addcart-btn data__buy_addcart-btn">
+                                        <img src="img/cart.svg" alt="">
+                                        <span style="font-weight: 600;">Thêm vào giỏ hàng</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end container__product -->

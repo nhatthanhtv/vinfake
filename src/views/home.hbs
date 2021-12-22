@@ -1,0 +1,84 @@
+<!-- slider -->
+<div class="slider grid wide">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/slider1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/slider2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/slider3.jpg" alt="">
+            </div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<!-- end slider -->
+<!-- menu button -->
+<div class="nav__btn__list grid wide">
+    <div class="data-btn-list row">
+        {{#each product}}
+        <div class="btn-item ">
+            <button class="btn btn-item-menu ">{{this.data.name}}</button>
+        </div>
+       
+        
+        {{/each}}
+    </div>
+</div>
+<!-- end menu btn -->
+<!-- content product -->
+<div class=" grid wide" id="contentShowProduct">
+                {{#each product}}
+    <div class="container">
+        <h2 class="product__title">{{this.data.name}}</h2>
+        <div class="container__product">
+            <div class="row" id="container-home">
+                {{#each this.data.items}}
+                <div class="product__card col l-2-4 m-3 c-6">
+                    <a href="/product/{{this.seoName}}" class="product__card-photo">
+                        <img data-src="{{this.mediaUrl}}"
+                            alt="" class="product__card-img lazy">
+                    </a>
+                    <div class="product__data">
+                        <a href="/product/{{this.seoName}}">
+                            <h3 class="product__data-name">{{this.name}}</h3>
+                        </a>
+                        <span>
+                            ĐVT: <span class="product__data-qty">{{this.uomName}}</span>
+                        </span>
+
+                        <div class="product__data-price">
+                            <span><span class="product__data-pri">{{price this.price}} </span>đ</span>
+                            {{!-- <span class="product__data-sale">10.900đ</span> --}}
+                        </div>
+
+                    </div>
+                    <div class="product__buy  ">
+                        <!--thêm thẻ buy-item kích hoạt mua-->
+                        <button class="product__buy-btn" data-id="{{this.id}}">Thêm vào giỏ</button>
+                        <div class="product__buy-number">
+                            <button class="product__buy-number-down product__buy-number-btn"><span>-</span></button>
+                            <span class="product__buy-number-item">0</span>
+                            <button class="product__buy-number-up product__buy-number-btn"><span>+</span></button>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+
+            </div>
+        </div>
+
+    </div>
+                {{/each }}
+            <form id="form-buy-cart" action="" method="POST"></form>
+    
+
+</div>
+<!-- end container__product -->
+

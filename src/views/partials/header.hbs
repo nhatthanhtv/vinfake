@@ -1,0 +1,198 @@
+<!-- Header -->
+        <header class="header " id="header">
+            <div class="header__top">
+                <div class="header__top__content grid wide">
+                    <a href="/" class="header__top__content-logo">
+                        <img src="http://localhost:3000//img/logo.png" alt="" class="header__top__content-img">
+                    </a>
+
+                    <div class="header__top__content-items">
+
+                        <div class="header__top__content-user item-content-top active">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em" height="1em"
+                                fill="currentColor" style="font-size: 30px; color: white; margin-right: 5px;">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z">
+                                </path>
+                            </svg>
+                            <span class="header__top__content-user-title title-content-item"> Tài khoản</span>
+                            <span class="header__top__content-user-title-login title-content-item">Tăng Nhật
+                                Thành</span>
+
+                            <!-- Option User -->
+                            <div class="option__user">
+                                <ul class="option__user-list">
+                                    <li class="option__user-item">
+                                        <a href="" class="option__user-link">
+                                            <i class="far fa-user"></i> Tài khoản của tôi</a>
+                                    </li>
+                                    <li class="option__user-item">
+                                        <a href="" class="option__user-link">
+                                            <i class="fas fa-truck"></i> Đơn hàng của tôi</a>
+                                    </li>
+                                    <li class="option__user-item">
+                                        <a href="" class="option__user-link">
+                                            <i class="fas fa-sign-out-alt"></i> Đăng xuất</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <a href="/cart" class="header__top__content-cart item-content-top">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em" height="1em"
+                                fill="currentColor" style="font-size: 26px; color: white; margin-right: 5px;">
+                                <path
+                                    d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z">
+                                </path>
+                            </svg>
+                            <span class="header__top__content-cart-title title-content-item">Giỏ hàng
+                                <span class="cart-number"></span>
+                            </span>
+                        </a>
+                        <div class="header__top__content-location item-content-top">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em" height="1em"
+                                fill="currentColor"
+                                style="font-size: 30px; color: white; margin-right: 5px; cursor: pointer;">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z">
+                                </path>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+                            </svg>
+                            <label for="show-list-loaction" class="header__top__content-location-title ">TP. Hồ Chí
+                                Minh</label>
+
+                            <input type="checkbox" name="" id="show-list-loaction" hidden>
+                            <!-- modal -->
+                            <label for="show-list-loaction" class="modal">
+
+                            </label>
+                            <!-- end modal -->
+                            <!-- location -->
+                            <div class="option__location">
+                                <div class="option__location-top">
+                                    <span>Khu vực đã chọn: <span class="location__store"> VM+ HCM CC Topaz City, P. 4,
+                                            Q. 8, TP. Hồ Chí Minh</span></span>
+                                </div>
+                                <div class="option__location-bottom">
+                                    <span>Chọn tỉnh, thành phố</span>
+                                    <label for="show-list-loaction" class="option__location-close">
+                                        <i class="far fa-times-circle"></i>
+                                    </label>
+                                </div>
+                                <div class="option__location-search">
+                                    <div class="option__location-search-item">
+                                        <input type="text" placeholder="Tìm nhanh phường, xã, quận, huyện">
+                                        <div class="option__location-search-icon">
+                                            <i class="fas fa-search"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="option__location-list">
+                                    <li class="option__location-item">
+                                        <span class="option__location-name">TP. Hồ Chí Minh</span>
+                                    </li>
+                                    <li class="option__location-item">
+                                        <span class="option__location-name">T. Bình Dương</span>
+                                    </li>
+                                    <li class="option__location-item">
+                                        <span class="option__location-name">T. Quảng Ninh </span>
+                                    </li>
+                                    <li class="option__location-item">
+                                        <span class="option__location-name">T. Quảng Ngãi</span>
+                                    </li>
+                                    <li class="option__location-item">
+                                        <span class="option__location-name">TP. Hải Phòng</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End location -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__bottom">
+                <div class="header__bottom__content grid wide">
+                    <div class="info-store">
+                        <span class="store-text">Cửa hàng phục vụ: </span>
+                        <i class="fas fa-map-marked-alt icon__gps"></i>
+                        <span class="info-store-location">4387, VM+ HCM CC Topaz
+                            City </span>
+                    </div>
+                    <div class="contact-sotre">
+                        <div class="contact-sotre-mail">
+                            <span class="contact-sotre-title">
+                                <i class="far fa-envelope"></i> Tin tức VinMart
+                            </span>
+                        </div>
+                        <div class="contact-sotre-phone">
+                            <span class="contact-sotre-title">
+                                <i class="fas fa-headset"></i> Tư vấn mua hàng
+                            </span>
+
+                            <div class="number-phone">
+                                <span>Mua online <a href="">0355004281</a> </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </header>
+
+        <!-- header mobile -->
+        <div class="header__mobile">
+            <div class="row custom-header-mobile">
+                <div class="col l-2-4">
+                    <div class="header__mobile-home">
+                        <a href="/"class="header__mobile-home-data header-mobile">
+                            <i class="fas fa-home"></i>
+                            <span class="header__mobile-home-title">Trang chủ</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div class="header__mobile-cart">
+                        <a href="/cart"class="header__mobile-cart-data header-mobile">
+                            <i class="fas fa-shopping-cart"></i>
+                            <div class="header__mobile-cart-number">
+                                <span id="mobile-cart-number"></span>
+                            </div>
+                            <span class="header__mobile-cart-title" style="cursor: pointer;">Giỏ hàng</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div class="header__mobile-bill">
+                        <div class="header__mobile-bill-data header-mobile">
+
+                            <i class="far fa-receipt"></i>
+                            <span class="header__mobile-bill-title">Đơn hàng</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div class="header__mobile-noti">
+                        <div class="header__mobile-noti-data header-mobile">
+                            <i class="far fa-bell"></i>
+                            <span class="header__mobile-noti-title">Thông báo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-2-4">
+                    <div class="header__mobile-user">
+                        <div class="header__mobile-user-data header-mobile">
+                            <i class="far fa-user"></i>
+                            <span class="header__mobile-user-title">Tài khoản</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End header -->

@@ -1,0 +1,29 @@
+<div class="container__oderlist">
+    <table class="table table-zebra table-hover scroll">
+                            <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Tên khách hàng</th>
+                                    <th>SĐT</th>
+                                    <th>Địa chỉ</th>
+                                    <th>Số tiền</th>
+                                </tr>
+                            </thead>
+                            {{!-- <tfoot id="tfooter-pay">
+                                <tr>
+                                    
+                                </tr>
+                            </tfoot> --}}
+                            <tbody id="tbody-pay">
+                                   {{#each listOrder}}
+                                <tr>
+                                   <td>{{@index}}</td>
+                                   <td>{{this.name}}</td>
+                                   <td>{{this.phone}}</td>
+                                   <td>{{this.address}}</td>
+                                </tr>
+                                   {{/each}}
+                                
+                            </tbody>
+                        </table>
+</div>
